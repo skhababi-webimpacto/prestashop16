@@ -5973,9 +5973,6 @@ ul.inline li {
 /* block */
 .block {
   margin-bottom: 30px;
-  /* block styles */
-  /* modified by Said */
-  margin-top: 80px;
 }
 .noborder .block {
   border: 0;
