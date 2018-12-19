@@ -1,0 +1,11 @@
+background-color: #fff;
+border-top: 5px solid #ff6000;
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+padding: 10px 0;
+position: fixed;
+top: 0;
+transition: max-height .3s ease-in;
+width: 100%;
+z-index: 51;

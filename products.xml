@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+	<Product>
+		<Reference>Bol001</Reference>
+		<Valid_internet_product>1</Valid_internet_product>
+		<Product_name>Bolso2</Product_name>
+		<Price>35.00</Price>
+		<Active_product>1</Active_product>
+		<SupplierNo>8</SupplierNo>
+		<Weight>5</Weight>
+		<Description>Bolso2 long description</Description>
+		<Short_Description>Bolso2 desc.</Short_Description>
+		<MinOrderQty>1</MinOrderQty>
+		<Categories>
+			<Category>
+				<CategoryID>14</CategoryID>
+				<CategoryName>Bolsos</CategoryName>
+				<Active_category>1</Active_category>
+				<Changed>0</Changed>
+			</Category>
+		</Categories>
+		<Tax_Class_ID>1</Tax_Class_ID>
+		<Discount>
+			<Discount_percentage>percentage</Discount_percentage>
+			<discountprice_ex_vat>0</discountprice_ex_vat>
+			<Discountprice_include_vat>0</Discountprice_include_vat>
+			<Pct_ReductionPercent>0</Pct_ReductionPercent>
+		</Discount>
+	</Product>
+	<Product>
+		<Reference>Zap001</Reference>
+		<Valid_internet_product>1</Valid_internet_product>
+		<Product_name>Zapato cremallera</Product_name>
+		<Price>45.00</Price>
+		<Active_product>1</Active_product>
+		<SupplierNo>8</SupplierNo>
+		<Weight>7</Weight>
+		<Description>Zapato cremallera long description</Description>
+		<Short_Description>Zapato cremallera desc.</Short_Description>
+		<MinOrderQty>1</MinOrderQty>
+		<Categories>
+			<Category>
+				<CategoryID>13</CategoryID>
+				<CategoryName>Zapatos</CategoryName>
+				<Active_category>1</Active_category>
+				<Changed>0</Changed>
+			</Category>
+		</Categories>
+		<Tax_Class_ID>1</Tax_Class_ID>
+		<Discount>
+			<Discount_percentage>percentage</Discount_percentage>
+			<discountprice_ex_vat>0</discountprice_ex_vat>
+			<Discountprice_include_vat>0</Discountprice_include_vat>
+			<Pct_ReductionPercent>0</Pct_ReductionPercent>
+		</Discount>
+	</Product>
+	<Product>
+		<Reference>Vestido001</Reference>
+		<Valid_internet_product>1</Valid_internet_product>
+		<Product_name>Vestido verano</Product_name>
+		<Price>75.00</Price>
+		<Active_product>1</Active_product>
+		<SupplierNo>8</SupplierNo>
+		<Weight>6</Weight>
+		<Description>Vestido verano long description</Description>
+		<Short_Description>Vestido verano desc.</Short_Description>
+		<MinOrderQty>1</MinOrderQty>
+		<Categories>
+			<Category>
+				<CategoryID>15</CategoryID>
+				<CategoryName>Vestidos</CategoryName>
+				<Active_category>1</Active_category>
+				<Changed>0</Changed>
+			</Category>
+		</Categories>
+		<Tax_Class_ID>1</Tax_Class_ID>
+		<Discount>
+			<Discount_percentage>percentage</Discount_percentage>
+			<discountprice_ex_vat>0</discountprice_ex_vat>
+			<Discountprice_include_vat>0</Discountprice_include_vat>
+			<Pct_ReductionPercent>0</Pct_ReductionPercent>
+		</Discount>
+	</Product>
+</Document>

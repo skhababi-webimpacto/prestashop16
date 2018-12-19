@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<phones>
+    <phone>
+        <price>1500</price>
+        <color>black</color>
+    </phone>
+    <phone>
+        <price>14000</price>
+        <color>black</color>
+    </phone>
+    <phone>
+        <price>5300</price>
+        <color>white</color>
+    </phone>
+</phones>
