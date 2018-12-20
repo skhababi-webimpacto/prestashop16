@@ -506,25 +506,66 @@ p {
 /* Added by Said start */
 #header-curtain {
 
-  border: solid 1px black;
   top: 45px;
   position: fixed;
   width: 100%;
   background-color: #ffffff;
-  z-index: 999;
+  z-index: 99999;
+  box-shadow: -1px 1px 9px #888888;
+}
 
+@media only screen and (max-width: 991px){
+  #header-curtain {
+    display: none!important;
+  }
+}
+
+#addtocartbtn2{
+  text-transform: uppercase;
+  color: white;
+  background-color: #ff8100;
+  border-color: black;
+  display: inline-block;
+  margin-bottom: 0px;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 7px 4px;
+  font-size: 12px;
+  line-height: 1.42857;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#short_description_curtain h1 {
+
+  font-family: "Droid Sans Mono", Helvetica, Arial, sans-serif;
+}
+
+#pricebtn #our_price_display_curtain{
+
+  font-size: 22px;
+  font-family: "Latoblack", sans-serif;
+  color: #df5050;
 }
 
 .curtainoff{
 
   height: 0px;            /* Tamaño original - tiene que ir en el mismo elemento  al que se cambiará el tamaño después (se le cambia la clase) !!!*/
-  transition: height .3s; /* Tiene que ir en los estilos del mismo elemento al que se cambiará el tamaño después !!! */
+  transition: height .05s; /* Tiene que ir en los estilos del mismo elemento al que se cambiará el tamaño después !!! */
   overflow: hidden;     /* Importante y necesario para ocultar progressivamente el contenido cuando el elemento contenedor es de menos tamaño */
 }
 
 .curtainon{
   height: 110px;          /* Tamaño segundario - tiene que ir en el mismo elemento al que cambiamos el tamaño (se le cambia la clase)!!!*/
-  transition: height .3s; /* Tiene que ir también en los estilos del mismo elemento al que cambiamos el tamaño (se le cambia la clase)!!! */
+  transition: height .1s; /* Tiene que ir también en los estilos del mismo elemento al que cambiamos el tamaño (se le cambia la clase)!!! */
   overflow: hidden;
 }
 
@@ -542,6 +583,8 @@ p {
 
 .inner-curtain{
   display: block;
+  transform: translateY(-50%);
+  top: 50%;
 
 }
 
@@ -557,6 +600,7 @@ p {
 
 #short_description_curtain{
   font-weight: bold;
+  color: #46bb46;
 }
 /* Added by Said END */
 

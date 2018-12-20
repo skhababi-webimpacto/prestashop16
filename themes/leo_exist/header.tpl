@@ -91,13 +91,15 @@
 				<p>{l s='You cannot place a new order from your country.'} <span class="bold">{$geolocation_country}</span></p>
 			</section>
 		{/if}
+		<!--said-->
+		{if isset($product)}
+			{if !$priceDisplay || $priceDisplay == 2}
+			{assign var='productPrice' value=$product->getPrice(true, $smarty.const.NULL, $priceDisplayPrecision)}
+			{/if}
+		{/if}
 		<section id="page" data-column="{$colValue}" data-type="{$LISTING_GRIG_MODE}">
 			<!-- Header -->
-
-
 			<header id="header"">
-
-
 				<section class="header-container">
 					<div id="topbar">
 						<div class="banner">
@@ -135,35 +137,36 @@
 							</div>
 						</div>
 					</div>
+					<!-- *** -->
 					<!-- Added by Said -->
 					{if isset($product)}
-					<div id="header-curtain" class="curtainoff col-xs-12">
+						<div id="header-curtain" class="curtainoff col-xs-12">
 
-						<div class="container-curtain col-xs-12">
+							<div class="container-curtain col-xs-12">
 
-							<div id="imgcurtain" class="img responsive col-xs-2">
-							<img class ="col-xs-12 col-md-12" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html':'UTF-8'}">
-							</div>
-
-							<div class="inner-curtain col-xs-10 col-md-10">
-
-								<div class = "col-xs-8 col-md-8" id="short_description_curtain" class="rte align_justify" itemprop="description">
-									<h1 class = "col-xs-12 col-md-12" style="padding: 0;">{$product->name|escape:'html':'UTF-8'}</h1>
-									{$product->description_short}
+								<div id="imgcurtain" class="img responsive col-xs-2">
+									<img class ="col-xs-12 col-md-12" itemprop="image" src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'cart_default')|escape:'html':'UTF-8'}">
 								</div>
-								<div id="pricebtn" class = "col-xs-4 col-md-4">
-									<div class = "col-xs-6 col-md-6" id="our_price_display" itemprop="price" style="top: 35px; font-weight: bold;">{convertPrice price=$productPrice}</div>
-									<div class = "col-xs-6 col-md-6" id="add_to_cart" style="top: 30px;">
-										<button id="addtocartbtn2" type="submit" name="Submit" class="button exclusive btn btn-outline">
-											<i class="fa fa-shopping-cart"></i>
-											<span id="">{l s='Add to cart'}</span>
-										</button>
 
+								<div class="inner-curtain col-xs-10 col-md-10">
+
+									<div class = "col-xs-8 col-md-8" id="short_description_curtain" class="rte align_justify" itemprop="description">
+										<h1 class = "col-xs-12 col-md-12" style="padding: 0;">{$product->name|escape:'html':'UTF-8'}</h1>
+										{$product->description_short}
+									</div>
+									<div id="pricebtn" class = "col-xs-4 col-md-4">
+										<div class = "col-xs-6 col-md-6" id="our_price_display_curtain" itemprop="price" style="top: 17px; font-weight: bold;">{convertPrice price=$productPrice}</div>
+										<div class = "col-xs-6 col-md-6" id="add_to_cart_curtain" style="top: 17px;">
+											<button id="addtocartbtn2" type="submit" name="Submit" class="button exclusive">
+												<i class="fa fa-shopping-cart"></i>
+												<span id="">{l s='Add to cart'}</span>
+											</button>
+
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 					{/if}
 					<!-- End Added by Said -->
 
