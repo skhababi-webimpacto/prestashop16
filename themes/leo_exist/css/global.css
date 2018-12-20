@@ -7314,10 +7314,10 @@ header{
 .off-canvas-inactive #page,
 .off-canvas-inactive #off-canvas-nav {
   -webkit-transition: all 500ms ease 0s;
-  transition: all 500ms ease 0s;
+/*  transition: all 500ms ease 0s;
   -webkit-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+  transform: translate(0, 0);*/
 }
 
 .off-canvas-active > #page,
